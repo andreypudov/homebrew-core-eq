@@ -24,19 +24,19 @@ brew trust andreypudov/core-eq
 You can trust only this cask instead of the full tap:
 
 #+begin_src sh
-brew trust --cask andreypudov/core-eq/core-eq
+brew trust --cask core-eq
 #+end_src
 
 Install CoreEQ:
 
 #+begin_src sh
-brew install --cask andreypudov/core-eq/core-eq
+brew install --cask core-eq
 #+end_src
 
 Install a specific version:
 
 #+begin_src sh
-brew install --cask andreypudov/core-eq/core-eq@1.5
+brew install --cask core-eq@1.5
 #+end_src
 
 * Gatekeeper
@@ -58,7 +58,7 @@ To update CoreEQ through Homebrew:
 
 #+begin_src sh
 brew update
-brew upgrade --cask andreypudov/core-eq/core-eq
+brew upgrade --cask core-eq
 #+end_src
 
 * Development
