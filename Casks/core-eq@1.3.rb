@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-cask "core-eq" do
+cask "core-eq@1.3" do
   version "1.3"
   sha256 "95ecd59f622005e0eabbd3b0c0e3132b43e1af21bb9eb2afeeca272223709622"
 
