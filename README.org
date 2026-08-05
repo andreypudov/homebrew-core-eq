@@ -1,0 +1,53 @@
+#+TITLE: homebrew-core-eq
+#+AUTHOR: Andrey Pudov
+#+DATE: <2026-08-05 Wed>
+#+OPTIONS: toc:nil
+
+* CoreEQ Homebrew Tap
+
+This repository provides a Homebrew tap for installing [[https://github.com/andreypudov/core-eq][CoreEQ]], a lightweight, driver-free system-wide equalizer for macOS. CoreEQ uses Apple's Core Audio process-tap API, requires no virtual audio devices, and leaves no components installed in the system.
+
+* Installation
+
+Add the tap:
+
+#+begin_src sh
+brew tap andreypudov/core-eq
+#+end_src
+
+Install CoreEQ:
+
+#+begin_src sh
+brew install --cask core-eq
+#+end_src
+
+* Gatekeeper
+
+CoreEQ is distributed unsigned and unnotarized. macOS may block the first launch.
+You can allow it in:
+
+- System Settings → Privacy & Security → *Allow Anyway*
+
+Alternatively, you may remove the quarantine attribute manually:
+
+#+begin_src sh
+xattr -dr com.apple.quarantine /Applications/CoreEQ.app
+#+end_src
+
+* Updating
+
+To update CoreEQ through Homebrew:
+
+#+begin_src sh
+brew update
+brew upgrade --cask core-eq
+#+end_src
+
+* Development
+
+The cask file is located in =Casks/core-eq.rb=. It follows standard Homebrew
+Cask conventions and references the latest CoreEQ release from GitHub.
+
+* License
+
+This tap follows the same license as CoreEQ (Apache 2.0).
