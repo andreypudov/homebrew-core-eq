@@ -21,12 +21,6 @@ Trust the tap (required by newer Homebrew versions):
 brew trust andreypudov/core-eq
 #+end_src
 
-You can trust only this cask instead of the full tap:
-
-#+begin_src sh
-brew trust --cask core-eq
-#+end_src
-
 Install CoreEQ:
 
 #+begin_src sh
