@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 cask "core-eq" do
-  version "1.9.2"
-  sha256 "4618a0657f01fb24880e0e12b806f2eeb64f358c3eb5012574ae55a541f7b95d"
+  version "1.10"
+  sha256 "dc14da80ef4e7a79c9bcde68c6ea80db0b87ee30c7defd6dd854f7f5d9bf1221"
 
   url "https://github.com/andreypudov/core-eq/releases/download/v#{version}/CoreEQ-#{version}.zip"
   name "CoreEQ"
